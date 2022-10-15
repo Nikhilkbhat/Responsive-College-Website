@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Couses</title>
+</head>
+<!--Bootstrap CSS link-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<style>
+  .navbar{
+    font-size: 16px;
+    letter-spacing: 0.3rem;
+    background:#f7a3a3;
+  }
+.navbar-brand img{
+    height: 50%;
+    width: 50%;
+    margin-left: 1.9rem;
+    margin-top: 5px;
+}
+.nav-link:hover{
+    text-decoration: none;
+    color: #000000;
+    font-weight: 250px;
+    border-bottom: 1px solid black;
+    
+}
+ul li{
+	font-weight: 30px;
+
+}
+li {
+  list-style-type: disc;
+}
+h1{
+  padding-top: 5px;
+}
+h2{
+  padding-left: 15px;
+}
+.nav-item{
+  list-style-type: none;
+}
+#cardz{
+  
+  background-color: #a89e32;
+
+}
+.container{
+  max-width: 1000px;
+  overflow: hidden;
+  padding: 80px 0;
+  }
+.container .main-card{
+  display: flex;
+  justify-content: space-evenly;
+  width: 200%;
+  transition: 1s;
+}
+
+.container .main-card .cards{
+  width: calc(100% / 2 - 10px);
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 20px;
+  justify-content: space-between;
+}
+.main-card .cards .card{
+  width: calc(100% / 3 - 10px);
+  background: #fff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+  transition: all 0.4s ease;
+}
+.main-card .cards .card:hover{
+  transform: translateY(-15px);
+}
+.cards .card .content{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.cards .card .content .img{
+  height: 180px;
+  width: 180px;
+  border-radius: 50%;
+ /* background: #FF676D;*/
+  margin-bottom: 14px;
+}
+.card .content .img img{
+  height: 100%;
+  width: 100%; 
+}
+.card .content .name{
+  font-size: 20px;
+  font-weight: 500;
+   color: black;
+}
+ .container .button{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+
+@media (max-width: 768px) {
+  .main-card .cards .card{
+    margin: 20px 0 10px 0;
+    width: calc(100% / 2 - 10px);
+  }
+}
+@media (max-width: 600px) {
+  .main-card .cards .card{
+    width: 100%;
+  }
+}
+
+
+/* Contact form */
+* {
+  outline: none;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.bb {
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+main {
+  max-width: 1250px;
+  width: 100%;
+  border-radius: 5px;
+  font-weight: 500;
+ }
+.contactForm{
+  margin: 2rem;
+  border-radius: 5px;
+  padding: 1rem;
+
+}
+
+.contactForm > .formGroup{
+  margin-bottom: 1rem;
+}
+
+.formGroup > input, .formGroup > textarea{
+  width: 100%;
+  padding: 5px 10px;
+  margin-top: 5px;
+  font-weight: 600;
+}
+
+
+
+</style>
+<body>
+
+
+<nav class="navbar navbar-expand-lg bg-light ">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="https://mite.ac.in/"><img src="images/mite-logo.png"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="courses.html">Courses</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="placement.html">Placement</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="campus-life.html">Campus-life</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="apply.html">Apply</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section style="background-color: #f7d257;">
+<h1 style="color:blue;font-family: cursive;" align="center" ><u>Proffessional Degree Courses</u> </h1>
+
+<br><br>
+<h2>Undergraduation Degree</h2>
+
+<ul>
+	<ul>
+	<li>AERONOTICAL ENGINEERING</li>
+	<li>ARTIFICIAL INTELLIGENCE & MACHINE LEARNING</li>
+	<li>CIVIL ENGINEERING</li>
+	<li>COMPUTER SCIENCE AND ENGINEERING</li>
+	<li>CSE (IOT & CYBER SECURITY WITH BLOCKCHAIN TECHNOLOGY</li>
+	<li>ELECTRONICS AND COMMUNUCATION ENGINEERING</li>
+	<li>INFORMATION SCIENCE AND ENGINEERING</li>
+	<li>MECHANICAL ENGINEERING</li>
+	<li>MECHATRONICS</li>
+	</ul>
+</ul>
+
+<h2>Postgraduation Degree</h2>
+<ul>
+<ul>
+	<li>COMPUTER SCIENCE AND ENGINEERING (M-TECH)</li>
+	<li>MECHATRONICS (M-TECH)</li>
+	<li>MBA</li>
+</ul>
+</ul>
+
+
+
+<section id="cardz">
+ <div class="container">
+    <div class="main-card">
+      <div class="cards">
+        <div class="card">
+         <div class="content">
+           <div class="img">
+            <img src="images/aero.webp">
+           </div>
+           <div class="details">
+             <div class="name">AERONOTICAL ENGINEERING</div> 
+             
+             <hr>
+        
+        <a href="https://mite.ac.in/aeronautical-engineering/" class="btn  btn btn-outline-danger">click here</a>
+      
+           </div>
+   
+         </div>
+        </div>
+        <div class="card">
+         <div class="content">
+           <div class="img">
+             <img src="images/aiml.jpg" alt="image not found">
+           </div>
+           <div class="details">
+             <div class="name">ARTIFICIAL INTELLIGENCE & MACHINE LEARNING</div>
+       <hr>
+            
+        <a href="https://mite.ac.in/artificial-intelligence-machine-learning/" class="btn btn btn-outline-danger">click here</a>
+      </div>
+           </div>  
+         </div>
+       
+        <div class="card">
+         <div class="content">
+           <div class="img">
+             <img src="images/civil.jpeg" alt="image not found">
+           </div>
+           <div class="details">
+             <div class="name">CIVIL <br> ENGINEERING</div>
+          <hr>
+
+            
+                <a href="https://mite.ac.in/civil-engineering/" class="btn btn btn-outline-danger">click here</a>
+              </div>
+       
+         </div>
+        </div>
+      </div>
+      <div class="cards">
+      </div>
+    </div>
+<br>
+
+<div class="main-card">
+      <div class="cards">
+        <div class="card">
+         <div class="content">
+           <div class="img">
+            <img src="images/cse.png">
+           </div>
+           <div class="details">
+             <div class="name"><br>Computer Science and Engineering</div> 
+             
+             <hr>
+        
+        <a href="https://mite.ac.in/computer-science-engineering/" class="btn btn btn-outline-danger">click here</a>
+      
+           </div>
+   
+         </div>
+        </div>
+        <div class="card">
+         <div class="content">
+           <div class="img">
+             <img src="images/iotblock.jpg" alt="image not found">
+           </div>
+           <div class="details">
+             <div class="name">
+            <div class="name">IOT & CYBER SECURITY WITH BLOCKCHAIN TECHNOLOGY</div>
+</div>
+       
+            <hr>
+        <a href="https://mite.ac.in/iot-cybersecurity-blockchain-technology/" class="btn btn btn-outline-danger">click here</a>
+      </div>
+           </div>  
+         </div>
+       
+        <div class="card">
+         <div class="content">
+           <div class="img">
+             <img src="images/ece.jpg" alt="image not found">
+           </div>
+           <div class="details">
+             <div class="name">ELECTRONICS AND COMMUNUCATION ENGINEERING</div>
+        <hr>
+            
+                <a href="https://mite.ac.in/electronics-comm-engineering/" class="btn btn btn-outline-danger">click here</a>
+              </div>
+       
+         </div>
+        </div>
+      </div>
+      <div class="cards">
+      </div>
+    </div>
+<br>
+    <div class="main-card">
+      <div class="cards">
+        <div class="card">
+         <div class="content">
+           <div class="img">
+            <img src="images/ise.jpg">
+           </div>
+           <div class="details">
+             <div class="name">INFORMATION SCIENCE AND ENGINEERING</div> 
+             
+             <hr>
+        
+        <a href="https://mite.ac.in/information-science-engineering/" class="btn btn btn-outline-danger">click here</a>
+      
+           </div>
+   
+         </div>
+        </div>
+        <div class="card">
+         <div class="content">
+           <div class="img">
+             <img src="images/machanical.jpg" alt="image not found">
+           </div>
+           <div class="details">
+             <div class="name">MECHANICAL ENGINEERING</div>
+       <hr>
+            
+        <a href="https://mite.ac.in/mechanical-engineering/" class="btn btn btn-outline-danger">click here</a>
+      </div>
+           </div>  
+         </div>
+       
+        <div class="card">
+         <div class="content">
+           <div class="img">
+             <img src="images/mechatronics.webp" alt="image not found">
+           </div>
+           <div class="details">
+             <div class="name"> <br>MECHTRONICS</div>
+       
+            <hr>
+                <a href="https://mite.ac.in/mechatronics/" class="btn btn btn-outline-danger">click here</a>
+              </div>
+       
+         </div>
+        </div>
+      </div>
+      <div class="cards">
+      </div>
+    </div>
+    <br>
+
+
+    <div class="main-card">
+      <div class="cards">
+        <div class="card">
+         <div class="content">
+           <div class="img">
+            <img src="images/cseT.jpg">
+           </div>
+           <div class="details">
+             <div class="name">COMPUTER SCIENCE AND ENGINEERING (M-TECH)</div> 
+             
+             <hr>
+        
+       <a href="https://mite.ac.in/computer-science-engineering-m-tech/" class="btn btn btn-outline-danger">click here</a>
+      
+           </div>
+   
+         </div>
+        </div>
+        <div class="card">
+         <div class="content">
+           <div class="img">
+             <img src="images/mechT.jpg" alt="image not found">
+           </div>
+
+           <div class="details">
+
+             <div class="name">MECHATRONICS <br>(M-TECH)</div>
+       
+            <hr>
+        <a href="https://mite.ac.in/mechatronics-m-tech/" class="btn btn btn-outline-danger">click here</a>
+      </div>
+           </div>  
+         </div>
+       
+        <div class="card">
+         <div class="content">
+           <div class="img">
+             <img src="images/mba.jpg" alt="image not found">
+           </div>
+           <div class="details">
+             <div class="name">Master of Business Administration (MBA)</div>
+             <hr>
+              <a href="https://mite.ac.in/mba/" class="btn btn btn-outline-danger">click here</a>
+              </div>
+       
+         </div>
+        </div>
+      </div>
+      <div class="cards">
+      </div>
+    </div>
+  </div>
+
+<section class="bb">
+  <main class='main'>
+      
+      <section class='contactForm' id='contactForm'>
+        <h1>ADMISSION ENQUIRY</h1>
+        <div class='formGroup'>
+          <label for='name'>Name</label><br/>
+          <input type='text' id='name' placeholder='Full Name' required>
+        </div>
+        <div class='formGroup'>
+          <label for='email'>Email id</label><br/>
+          <input type='text' id='email' placeholder='Email' required>
+        </div>
+        <div class='formGroup'>
+          <label for='name'>Phone Number</label><br/>
+          <input type='number' id='phone' placeholder='Number' required>
+        </div>
+        <div class='formGroup'>
+          <label for='message'>Message</label><br/>
+          <textarea placeholder="Send some message!" id="message" rows="4" cols="50"></textarea>
+        </div>
+        
+       <button type="button" class="btn btn-primary" style="color: white;" onclick="alert ('Yor response has been submitted')">Send message</button>
+       
+      </section>
+    </main>
+</section>
+</section>
+</section>
+
+</body>
+</html>
